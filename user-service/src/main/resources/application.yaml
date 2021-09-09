@@ -1,0 +1,18 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+spring:
+  application:
+    name: USER-SERVICE
+
+  data:
+    cassandra:
+      keyspace-name: test
+      local-datacenter: datacenter1
+      port: 9042
+  cloud:
+    config:
+      enabled: false
+server:
+  port: 8081
